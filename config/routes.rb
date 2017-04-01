@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'index' => 'welcome/index'
+  get 'index' => 'welcome#index'
 
-  get 'about' => 'welcome/about'
+  get 'about' => 'welcome#about'
 
-  get 'hello' => 'welcome/contact'
+  get 'contact' => 'welcome#contact'
   
-  get 'mimome' => 'welcome/mimome'
+  get 'mimome' => 'welcome#mimome'
 
-  root 'welcome#mimome'
+ root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
