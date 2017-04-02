@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Workspace</title>
+  <title>Closa Mimosa</title>
 
  
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,29 @@
 </head>
 <body>
 
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Closa Mimosa", root_url, :class => "navbar-brand" %>
+      <!--Original code<%= link_to Rails.application.class.parent_name, root_url, :class => "navbar-brand" %>-->
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <%= link_to "MimoMe", mimome_path, class:"navbar-brand" %>
+        <!--<%= link_to "Welcome", root_path, class:"navbar-brand"%>-->
+        <%= link_to "About", about_path, class:"navbar-brand" %>
+        <%= link_to "Contact", contact_path, class:"navbar-brand" %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
 
 <%= yield %>
 
